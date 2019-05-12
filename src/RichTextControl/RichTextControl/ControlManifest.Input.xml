@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="JAKitControls" constructor="RichTextControl" version="0.0.1" display-name-key="RichTextControl_Display_Key" description-key="RichTextControl_Desc_Key" control-type="standard" preview-image="preview.png" >
+    <modes>
+      <read />
+      <edit />
+    </modes>
+    <!-- property node identifies a specific, configurable piece of data that the control expects from CDS -->
+    <property name="fieldControl" display-name-key="PropertyMultilineField_Display_Key" description-key="PropertyMultilineField_Desc_Key" of-type="Multiple" usage="bound" required="true" />
+    <!--<property name="fieldDisableMultimedia" display-name-key="PropertyDisableMultimedia_Display_Key" description-key="PropertyDisableMultimedia_Desc_Key" of-type="TwoOptions" usage="input" required="false" />-->
+
+    <resources>
+      <code path="index.ts" order="1"/>
+      <css path="../node_modules/quill/dist/quill.core.css" order="1" />
+      <css path="../node_modules/quill/dist/quill.snow.css" order="1" />
+      <css path="../node_modules/quill/dist/quill.bubble.css" order="1" />
+      <css path="css/RichTextControl.css" order="1" />
+      <resx path="strings/RichTextControl.1033.resx" version="1.0.0" />
+      <resx path="strings/RichTextControl.3082.resx" version="1.0.0" />
+      <img path="preview.png" />
+    </resources>
+  </control>
+</manifest>

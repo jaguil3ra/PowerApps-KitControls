@@ -1,0 +1,15 @@
+.JAKitControls\.RichTextControl .ql-toolbar.ql-snow{
+    padding:0px !important;
+    background: #eee;
+ }
+ .JAKitControls\.RichTextControl .ql-editor{
+     min-height: 150px;
+ }
+ .JAKitControls\.RichTextControl .ql-snow .ql-picker-label {
+    padding-left: 4px;
+    
+ }
+ .JAKitControls\.RichTextControl .ql-toolbar.ql-snow .ql-formats{
+    margin-right:0px;
+    text-align: left;
+ }
