@@ -1,3 +1,7 @@
+.JAKitControls\.RichTextControl{
+   min-width: 300px;
+}
+
 .JAKitControls\.RichTextControl .ql-toolbar.ql-snow{
     padding:0px !important;
     background: #eee;
