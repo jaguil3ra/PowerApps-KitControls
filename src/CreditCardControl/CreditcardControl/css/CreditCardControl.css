@@ -10,6 +10,7 @@
 }
 .JAKitControls.CreditCardControl .credicardForm{
     max-width:350px;
+    min-width:320px;
     box-sizing: border-box;
     
 }
