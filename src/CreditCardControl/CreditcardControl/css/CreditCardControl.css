@@ -1,0 +1,53 @@
+.JAKitControls.CreditCardControl .credicardForm input{
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-size: 14px;
+    font-family: 'SegoeUI', 'Segoe UI';
+    outline: none;
+    line-height: 2rem;
+    width:100%
+}
+.JAKitControls.CreditCardControl .credicardForm{
+    max-width:350px;
+    box-sizing: border-box;
+    
+}
+.JAKitControls.CreditCardControl .credicardForm *{
+    box-sizing: border-box !important;
+}
+@media  (min-width: 450px){
+    .JAKitControls.CreditCardControl .row .column-6 {
+        width: 50%;
+        float: left;
+    }
+    .JAKitControls.CreditCardControl .row .column-3 {
+        width: 25%;
+        float: left;
+    }
+}
+.JAKitControls.CreditCardControl .credicardForm .row .column{
+    margin-top: 10px;
+}
+@media only screen and (max-width: 450px){
+    .JAKitControls.CreditCardControl .credicardForm .row .column{
+        width: 100%;
+        padding-bottom: 10px;
+    }
+}
+
+.JAKitControls.CreditCardControl .credicardForm .jp-card-invalid{
+    color: #3d3d3d;
+}
+
+.JAKitControls.CreditCardControl .jp-card-container{
+    margin: 0;
+}
+.JAKitControls.CreditCardControl .credicardForm .row > .column {
+    padding-left: 0;
+    padding-right: 0;
+}
+.JAKitControls.CreditCardControl .credicardForm .row:after {
+    clear: both;
+    display: table;
+}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="JAKitControls" constructor="CreditCardControl" version="0.0.1" display-name-key="CreditCardControl_Display_Key" description-key="CreditCardControl_Desc_Key" control-type="standard" preview-image="preview.jpg">
+    <modes>
+      <read />
+      <edit />
+    </modes>
+    <property name="numberProperty" display-name-key="NumberProperty_Display_Key" description-key="NumberProperty_Desc_Key" of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="nameProperty" display-name-key="NameProperty_Display_Key" description-key="NameProperty_Desc_Key" of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="cvcProperty" display-name-key="CVCProperty_Display_Key" description-key="CVCProperty_Desc_Key" of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="expiryProperty" display-name-key="ExpiryProperty_Display_Key" description-key="ExpiryProperty_Desc_Key" of-type="SingleLine.Text" usage="bound" required="true" />
+
+    <resources>
+      <code path="index.ts" order="1"/>
+      <css path="../node_modules/card/lib/card.css" order="1" />
+      <css path="css/CreditCardControl.css" order="1" />
+      <img path="preview.jpg" />      
+      <resx path="strings/CreditCardControl.1033.resx" version="1.0.0" />
+      <resx path="strings/CreditCardControl.3082.resx" version="1.0.0" />
+
+    </resources>
+  </control>
+</manifest>
