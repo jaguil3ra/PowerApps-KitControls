@@ -4,7 +4,7 @@ This is a custom control that use the plugin [Quill JS](https://quilljs.com) to 
 
 You can modified the code for enable images (base64) and videos (embedded) in the control
 
-[Solution](solution/RichTextControl.zip)
+*Download managed solution ready for install **[here](solution/RichTextControl.zip)***
 
 ![](../../assets/pictures/rich-text-preview.jpg)
 

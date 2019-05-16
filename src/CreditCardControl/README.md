@@ -14,6 +14,8 @@ This control is composed for 4 single line fields in the PowerApps's form which 
 
 The hidden fields are needed because the values will not be linked in the custom control if they aren't present in the PowerApps form. (I hope that in a future the PCF improve in this regard)
 
+*Download managed solution ready for install **[here](solution/CreditCardControl.zip)***
+
 ![](../../assets/pictures/credit-card-preview.jpg)
 
 ![](../../assets/pictures/credit-card-control.jpg)
