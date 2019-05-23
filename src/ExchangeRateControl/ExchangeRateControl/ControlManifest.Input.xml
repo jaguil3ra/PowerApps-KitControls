@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="JAKitControls" constructor="ExchangeRateControl" version="0.0.1" display-name-key="ExchangeRateControl_Display_Key" description-key="ExchangeRateControl_Desc_Key" control-type="standard">
+    <!-- property node identifies a specific, configurable piece of data that the control expects from CDS -->
+    <property name="rateExchangeProperty" display-name-key="RateExchangeProperty_Display_Key" description-key="RateExchangeProperty_Desc_Key" of-type-group="numbers" usage="bound" required="true" />
+    <property name="currencyBaseProperty" display-name-key="CurrencyBaseProperty_Display_Key" description-key="CurrencyBaseProperty_Desc_Key" of-type="Enum"  usage="input" required="true">
+      <!-- Here add more base currency-->
+      <value name="USD" display-name-key="USD" description-key="From_USD" default="true">USD</value>
+      <value name="EUR" display-name-key="EUR" description-key="From_EUR">EUR</value>
+      <value name="JPY " display-name-key="JPY" description-key="From_JPY">JPY</value>
+      <value name="CNY " display-name-key="CNY" description-key="From_CNY">CNY</value>
+    </property>
+    <property name="currencyDefaultProperty" display-name-key="CurrencyDefault_Display_Key" description-key="CurrencyDefault_Desc_Key" of-type="Enum"  usage="input" required="true">
+      <!-- Here add more target currency-->
+      <value name="EUR" display-name-key="EUR" description-key="To_EUR" default="true">EUR</value>
+      <value name="USD" display-name-key="USD" description-key="To_USD">USD</value>      
+      <value name="JPY" display-name-key="JPY" description-key="To_JPY">JPY</value>
+      <value name="CNY" display-name-key="CNY" description-key="To_CNY">CNY</value>
+    </property>
+    <property name="currencyTargetProperty" display-name-key="CurrencyTarget_Display_Key" description-key="CurrencyTarget_Desc_Key" of-type="SingleLine.Text" usage="bound" required="true" />
+    <property name="dateProperty" display-name-key="PropertyDate_Display_Key" description-key="PropertyDate_Desc_Key" of-type="DateAndTime.DateOnly" usage="bound" required="true" />
+    <type-group name="numbers">
+      <type>Decimal</type>
+      <type>Currency</type>
+    </type-group>
+    <resources>
+      <code path="index.ts" order="1"/>
+      <css path="css/ExchangeRateControl.css" order="1" />
+      <img path="icon.png" />
+      <resx path="strings/ExchangeRateControl.1033.resx" version="1.0.0" />
+      <resx path="strings/ExchangeRateControl.3082.resx" version="1.0.0" />
+    </resources>
+  </control>
+</manifest>
