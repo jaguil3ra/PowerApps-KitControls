@@ -10,7 +10,7 @@ This control need to has a binding with a field type "DateAndTime.DateOnly" for 
 - A field for save the currency (of type Singleline.Text and should hidden in the form)
 
 
-*Download managed solution ready for install **[here](solution/ExchangerateControl.zip)***
+*Download managed solution ready for install **[here](solution/ExchangeRateControl.zip)***
 
 <a href="https://www.youtube.com/watch?v=SzZeOQf7OqI" ><img src="../../assets/pictures/exchange-rate-preview.jpg" 
 alt="IMAGE ALT TEXT HERE" width="100%" height="100%" border="10" /></a>
