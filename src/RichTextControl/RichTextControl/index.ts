@@ -61,7 +61,7 @@ export class RichTextControl implements ComponentFramework.StandardControl<IInpu
 			this._toolBarOptions.toolbar[0].push("image");
 		}
 
-		if(context.parameters.enableVideo!.raw == "No"){
+		if(context.parameters.enableVideo!.raw == "Yes"){
 			this._toolBarOptions.toolbar[0].push("video");
 		}
 		
