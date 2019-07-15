@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="JAKitControls" constructor="DSItemComparator" version="0.0.1" display-name-key="DSItemComparator_Display_Key" description-key="DSItemComparator_Desc_Key" control-type="standard" >
+    <data-set name="itemsDataSet" display-name-key="ItemsDataset_Display_Key" description-key="ItemsDatasetProperty_Desc_Key">
+      <property-set name="titlePropertySet" display-name-key="TitleProperty_Display_Key" description-key="TitleProperty_Desc_Key" of-type="SingleLine.Text" usage="input" required="true" />
+      <property-set name="number1PropertySet" display-name-key="Number1Property_Display_Key" description-key="Property_Desc_Key" of-type-group="numbers" usage="input" required="true" />
+      <property-set name="number2PropertySet" display-name-key="Number2Property_Display_Key" description-key="Property_Desc_Key" of-type-group="numbers" usage="input" required="true" />
+      <property-set name="number3PropertySet" display-name-key="Number3Property_Display_Key" description-key="Property_Desc_Key" of-type-group="numbers" usage="input" required="true" />
+      <property-set name="number4PropertySet" display-name-key="Number4Property_Display_Key" description-key="Property_Desc_Key" of-type-group="numbers" usage="input" required="false" />
+      <property-set name="number5PropertySet" display-name-key="Number5Property_Display_Key" description-key="Property_Desc_Key" of-type-group="numbers" usage="input" required="false" />
+      <property-set name="number6PropertySet" display-name-key="Number6Property_Display_Key" description-key="Property_Desc_Key" of-type-group="numbers" usage="input" required="false" />
+      <property-set name="number7PropertySet" display-name-key="Number7Property_Display_Key" description-key="Property_Desc_Key" of-type-group="numbers" usage="input" required="false" />
+      <property-set name="number8PropertySet" display-name-key="Number8Property_Display_Key" description-key="Property_Desc_Key" of-type-group="numbers" usage="input" required="false" />
+    </data-set>
+    <property name="imgNameproperty" display-name-key="PropertyImg_Display_Key" description-key="PropertyImg_Desc_Key" of-type="Enum" usage="input" required="false" >
+      <value name="YES" display-name-key="EnumYES_Display_Key" description-key="EnumYES_Desc_Key" >YES</value>    
+      <value name="NO" display-name-key="EnumNO_Display_Key" description-key="EnumNO_Desc_Key" default="true">NO</value>      
+        
+    </property>
+    <type-group name="numbers">
+      <type>Decimal</type>
+      <type>FP</type>
+      <type>Whole.None</type>
+    </type-group>
+    <resources>
+      <code path="index.ts" order="1"/>
+      <css path="css/DSItemComparator.css" order="1" />
+      <css path="css/IcoMoonFree.ttf" order="1" />
+      <css path="css/demo.css" order="1" />
+      <img path="iconimage.png" />
+      <resx path="strings/DSItemComparator.1033.resx" version="1.0.0" />
+      <resx path="strings/DSItemComparator.3082.resx" version="1.0.0" />
+    </resources>
+    <!-- UNCOMMENT TO ENABLE THE SPECIFIED API
+    <feature-usage>
+      <uses-feature name="Device.captureAudio" required="true" />
+      <uses-feature name="Device.captureImage" required="true" />
+      <uses-feature name="Device.captureVideo" required="true" />
+      <uses-feature name="Device.getBarcodeValue" required="true" />
+      <uses-feature name="Device.getCurrentPosition" required="true" />
+      <uses-feature name="Device.pickFile" required="true" />
+      <uses-feature name="Utility" required="true" />
+      <uses-feature name="WebAPI" required="true" />
+    </feature-usage>
+    -->
+  </control>
+</manifest>
