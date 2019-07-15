@@ -135,4 +135,17 @@
   <data name="RichTextControl_Display_Key" xml:space="preserve">
     <value>Rich text control</value>
   </data>
+
+  <data name="PropertyEnableVideo_Display_Key" xml:space="preserve">
+    <value>Enable videos</value>
+  </data> 
+  <data name="PropertyEnableVideo_Desc_Key" xml:space="preserve">
+    <value>Enable embed videos in the control</value>
+  </data>  
+  <data name="PropertyEnableImage_Display_Key" xml:space="preserve">
+    <value>Enable images</value>
+  </data> 
+  <data name="PropertyEnableImage_Desc_Key" xml:space="preserve">
+    <value>IF enable images, the component convert the selected images in format base64. Be careful with the size of the images</value>
+  </data>   
 </root>

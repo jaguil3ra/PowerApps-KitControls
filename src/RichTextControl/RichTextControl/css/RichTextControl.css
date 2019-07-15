@@ -17,3 +17,6 @@
     margin-right:0px;
     text-align: left;
  }
+ .JAKitControls\.RichTextControl .ql-container.ql-snow.ql-disabled{
+   border-top: 1px solid #ccc;
+ }

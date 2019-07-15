@@ -135,4 +135,17 @@
   <data name="RichTextControl_Display_Key" xml:space="preserve">
     <value>Control de texto enriquecido</value>
   </data>
+
+  <data name="PropertyEnableVideo_Display_Key" xml:space="preserve">
+    <value>Habilitar videos</value>
+  </data> 
+  <data name="PropertyEnableVideo_Desc_Key" xml:space="preserve">
+    <value>Permite incrustar videos a partir de un link</value>
+  </data>  
+  <data name="PropertyEnableImage_Display_Key" xml:space="preserve">
+    <value>Habilitar imagenes</value>
+  </data> 
+  <data name="PropertyEnableImage_Desc_Key" xml:space="preserve">
+    <value>Al habilitar las imagenes estas se incrustan en formato base64. Tener precaución con el tamaño</value>
+  </data>   
 </root>

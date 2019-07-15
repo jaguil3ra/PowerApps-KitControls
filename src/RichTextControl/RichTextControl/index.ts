@@ -41,8 +41,6 @@ export class RichTextControl implements ComponentFramework.StandardControl<IInpu
 				]
 			]
 		}
-		//uncomment the line for enable image and videos
-		//this._toolBarOptions.toolbar[0].push("image","video");	
 		
 	}
 
@@ -58,12 +56,16 @@ export class RichTextControl implements ComponentFramework.StandardControl<IInpu
 	{
 
 		this._context = context;
-		
-		/*
-		if(this._context.parameters.fieldDisableMultimedia != undefined && !this._context.parameters.fieldDisableMultimedia.raw){
-			
+
+		if(context.parameters.enableImages!.raw == "Yes"){
+			this._toolBarOptions.toolbar[0].push("image");
 		}
-		*/
+
+		if(context.parameters.enableVideo!.raw == "No"){
+			this._toolBarOptions.toolbar[0].push("video");
+		}
+		
+
 		this._container = document.createElement("div");
 		
 		this._notifyOutputChanged = notifyOutputChanged;
@@ -86,7 +88,9 @@ export class RichTextControl implements ComponentFramework.StandardControl<IInpu
 		});
 
 		container.appendChild(this._container);	
-		
+
+		let toolbar = document.getElementsByClassName("ql-toolbar")[0];
+		toolbar.setAttribute("style", "display:"+ (context.mode.isControlDisabled? "none" : "block" ))
 	}
 
 	/**
@@ -95,8 +99,11 @@ export class RichTextControl implements ComponentFramework.StandardControl<IInpu
 	 */
 	public updateView(context: ComponentFramework.Context<IInputs>): void
 	{
+
 		//Disable editor component if context mode is disable
 		this._editor.enable(!context.mode.isControlDisabled);
+		let toolbar = document.getElementsByClassName("ql-toolbar")[0];
+		toolbar.setAttribute("style", "display:"+ (context.mode.isControlDisabled? "none" : "block" ))
 		this._value = context.parameters.fieldControl.raw;
 	  	this._context = context;
 	}

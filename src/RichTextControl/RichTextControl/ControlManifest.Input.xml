@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <manifest>
-  <control namespace="JAKitControls" constructor="RichTextControl" version="0.0.1" display-name-key="RichTextControl_Display_Key" description-key="RichTextControl_Desc_Key" control-type="standard" preview-image="preview.png" >
-    <modes>
+  <control namespace="JAKitControls" constructor="RichTextControl" version="0.0.3" display-name-key="RichTextControl_Display_Key" description-key="RichTextControl_Desc_Key" control-type="standard" preview-image="preview.png" >
+    <!--<modes>
       <read />
       <edit />
-    </modes>
+    </modes>-->
     <!-- property node identifies a specific, configurable piece of data that the control expects from CDS -->
     <property name="fieldControl" display-name-key="PropertyMultilineField_Display_Key" description-key="PropertyMultilineField_Desc_Key" of-type="Multiple" usage="bound" required="true" />
-    <!--<property name="fieldDisableMultimedia" display-name-key="PropertyDisableMultimedia_Display_Key" description-key="PropertyDisableMultimedia_Desc_Key" of-type="TwoOptions" usage="input" required="false" />-->
+
+    <property name="enableImages" display-name-key="PropertyEnableImage_Display_Key" description-key="PropertyEnableImage_Desc_Key" of-type="Enum" usage="input" required="false" >
+      <value name="NO" display-name-key="NO" description-key="To_No" default="true">No</value>
+      <value name="YES" display-name-key="YES" description-key="To_Yes">Yes</value>   
+    </property>
+    <property name="enableVideo" display-name-key="PropertyEnableVideo_Display_Key" description-key="PropertyEnableVideo_Desc_Key" of-type="Enum" usage="input" required="false" >
+      <value name="NO" display-name-key="NO" description-key="To_No" default="true">No</value>
+      <value name="YES" display-name-key="YES" description-key="To_Yes">Yes</value>   
+    </property>
 
     <resources>
       <code path="index.ts" order="1"/>
