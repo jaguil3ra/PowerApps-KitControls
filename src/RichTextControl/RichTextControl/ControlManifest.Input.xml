@@ -16,7 +16,26 @@
       <value name="NO" display-name-key="NO" description-key="To_No" default="true">No</value>
       <value name="YES" display-name-key="YES" description-key="To_Yes">Yes</value>   
     </property>
-
+    <!--
+    <type-group name="allTypes">
+      <type>Decimal</type>
+      <type>TwoOptions</type>
+      <type>DateAndTime.DateOnly</type>
+      <type>DateAndTime.DateAndTime,</type>
+      <type>FP</type>
+      <type>Currency</type>
+      <type>OptionSet</type>
+      <type>SingleLine.Email</type>
+      <type>SingleLine.Text</type>
+      <type>SingleLine.TextArea</type>
+      <type>SingleLine.URL</type>
+      <type>SingleLine.Ticker</type>
+      <type>SingleLine.Phone</type>
+      <type>Multiple</type>
+      <type>FP</type>
+      <type>Whole.None</type>
+    </type-group>
+    -->
     <resources>
       <code path="index.ts" order="1"/>
       <css path="../node_modules/quill/dist/quill.core.css" order="1" />

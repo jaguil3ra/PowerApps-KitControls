@@ -13,6 +13,9 @@ Pic |  Control |  Type | Description | Managed Solution
 ![](assets/pictures/credit-card-control.jpg) | [Credit Card Control](src/CreditCardControl) | Field | A interactive control for credit card | [CreditCardControl](src/CreditCardControl/solution/CreditCardControl.zip)
 ![](assets/pictures/exchange-rate-preview.jpg) | [Exchange Rate Control](src/ExchangeRateControl) | Field | A control for get the exchange rates from the api https://exchangeratesapi.io/ | [ExchangeRateControl](src/ExchangeRateControl/solution/ExchangeRateControl.zip)
 ![](assets/pictures/item-comparator-preview.png) | [ItemsComparator](src/DSItemsComparator) | DataSet | Allows comparing records through a radar chart. | [ItemsComparator](src/DSItemsComparator/solution/DSItemsComparator.zip)
+![](assets/pictures/sharepointcard.jpg) | [SharePointDocumentCard](src/DSItemsComparator) | DataSet | It allows you to show a preview of the documents in the form of a card | [SharePointDocumentCard](src/DS_SharePointDataCard/solution/DS_SharePointDataCardSolution.zip)
+
+
 
 For more info you can to go my page: [https://jaguil3ra.com](https://jaguil3ra.com)
 
