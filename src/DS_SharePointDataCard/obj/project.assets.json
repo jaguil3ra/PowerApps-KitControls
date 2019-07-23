@@ -65,11 +65,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dl_jo\\source\\repos\\_DynamicsCRM-365\\PowerAppsComponents\\FieldComponents\\KitControls\\src\\DS_SharePointDataCard\\DS_SharePointDataCard.pcfproj",
+      "projectUniqueName": "C:\\Users\\dl_jo\\source\\repos\\_DynamicsCRM-365\\PowerAppsComponents\\KitComponents\\KitControls\\src\\DS_SharePointDataCard\\DS_SharePointDataCard.pcfproj",
       "projectName": "DS_SharePointDataCard",
-      "projectPath": "C:\\Users\\dl_jo\\source\\repos\\_DynamicsCRM-365\\PowerAppsComponents\\FieldComponents\\KitControls\\src\\DS_SharePointDataCard\\DS_SharePointDataCard.pcfproj",
+      "projectPath": "C:\\Users\\dl_jo\\source\\repos\\_DynamicsCRM-365\\PowerAppsComponents\\KitComponents\\KitControls\\src\\DS_SharePointDataCard\\DS_SharePointDataCard.pcfproj",
       "packagesPath": "C:\\Users\\dl_jo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dl_jo\\source\\repos\\_DynamicsCRM-365\\PowerAppsComponents\\FieldComponents\\KitControls\\src\\DS_SharePointDataCard\\obj\\",
+      "outputPath": "C:\\Users\\dl_jo\\source\\repos\\_DynamicsCRM-365\\PowerAppsComponents\\KitComponents\\KitControls\\src\\DS_SharePointDataCard\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\dl_jo\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -2,3 +2,5 @@ C:\Users\dl_jo\source\repos\_DynamicsCRM-365\PowerAppsComponents\D365ug\DS_Share
 C:\Users\dl_jo\source\repos\_DynamicsCRM-365\PowerAppsComponents\D365ug\DS_SharePointDataCard\obj\Debug\DS_SharePointDataCard.pcfproj.CoreCompileInputs.cache
 C:\Users\dl_jo\source\repos\_DynamicsCRM-365\PowerAppsComponents\FieldComponents\KitControls\src\DS_SharePointDataCard\obj\Debug\DS_SharePointDataCard.pcfprojAssemblyReference.cache
 C:\Users\dl_jo\source\repos\_DynamicsCRM-365\PowerAppsComponents\FieldComponents\KitControls\src\DS_SharePointDataCard\obj\Debug\DS_SharePointDataCard.pcfproj.CoreCompileInputs.cache
+C:\Users\dl_jo\source\repos\_DynamicsCRM-365\PowerAppsComponents\KitComponents\KitControls\src\DS_SharePointDataCard\obj\Debug\DS_SharePointDataCard.pcfprojAssemblyReference.cache
+C:\Users\dl_jo\source\repos\_DynamicsCRM-365\PowerAppsComponents\KitComponents\KitControls\src\DS_SharePointDataCard\obj\Debug\DS_SharePointDataCard.pcfproj.CoreCompileInputs.cache
