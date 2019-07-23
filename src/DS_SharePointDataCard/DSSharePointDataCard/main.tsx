@@ -1,5 +1,5 @@
 import * as React from 'react';
-import IREcordInformation from './IRecordInformation';
+import IRecordInformation from './IRecordInformation';
 import { PrimaryButton } from 'office-ui-fabric-react';
 import {
     DocumentCard,
@@ -16,7 +16,7 @@ import {
 const baseProductionCdnUrl ="https://static2.sharepointonline.com/files/fabric/assets/item-types-fluent/48/"
 
 interface IProperties {
-    elements:Array<IREcordInformation>
+    elements:Array<IRecordInformation>
     enableLoadMore:boolean,
     loadNextRecords: ()=>void
 } 

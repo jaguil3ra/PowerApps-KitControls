@@ -3,14 +3,14 @@ import DataSetInterfaces = ComponentFramework.PropertyHelper.DataSetApi;
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import App from './main';
-import IREcordInformation from './IRecordInformation';
+import IRecordInformation from './IRecordInformation';
 
 type DataSet = ComponentFramework.PropertyTypes.DataSet;
 
 export class DSSharePointDataCard implements ComponentFramework.StandardControl<IInputs, IOutputs> {
 	private _context:ComponentFramework.Context<IInputs>;
 	private _container:HTMLDivElement;
-	private _allRecord:Array<IREcordInformation>
+	private _allRecord:Array<IRecordInformation>
 	/**
 	 * Empty constructor.
 	 */
@@ -63,34 +63,50 @@ export class DSSharePointDataCard implements ComponentFramework.StandardControl<
 	private recordRecorator(dataset: DataSet)
 	{
 		let currentdIds = dataset.sortedRecordIds;
-		let tempAllRecord = Array<IREcordInformation>()
+		let tempAllRecord = Array<IRecordInformation>()
 
 		currentdIds.forEach(id=>{
 			let element = dataset.records[id];
-			
+			//defined the columns
 			let columnAbsoluteUrl = dataset.columns.find(p => p.alias == "urlAbsolute");
 			let columnUser = dataset.columns.find(p => p.alias == "author");
 			let columnDocumentName = dataset.columns.find(p => p.alias == "documentName");
 			let columnDate = dataset.columns.find(p => p.alias == "created");
 
-
-
-
+			//Get path
 			let absolutePath = element.getValue(columnAbsoluteUrl!.name).toString();
-			let relativePath = absolutePath.substring(0,absolutePath.indexOf("/sites/")+7);
+			let relativePath ="";
+			let siteName = "";
+			let siteUrl = "";
 
-			let tempPath = absolutePath.substring(absolutePath.indexOf("/sites/")+7);
-			let siteName = tempPath.substring(0, tempPath.indexOf('/'));
+			//Check if is sharepoint site
+			if(absolutePath.indexOf("/sites/") != -1){
+				relativePath = absolutePath.substring(0,absolutePath.indexOf("/sites/")+7);
+				let tempPath = absolutePath.substring(absolutePath.indexOf("/sites/")+7);
+				siteName = tempPath.substring(0, tempPath.indexOf('/'));
+				siteUrl  = relativePath+siteName;;
+			}
+			//Check if is onedrive site
+			else if(absolutePath.indexOf("my.sharepoint.com/personal/") != -1){
+				relativePath = absolutePath.substring(0,absolutePath.indexOf("my.sharepoint.com/personal/")+27);
+				let tempPath = absolutePath.substring(absolutePath.indexOf("my.sharepoint.com/personal/")+27);
+				siteName = tempPath.substring(0, tempPath.indexOf('/'));
+				siteUrl  = relativePath+siteName;
+			//Main site
+			}
+			else{
+				siteUrl = absolutePath.substring(0,absolutePath.indexOf(".sharepoint.com/")+16);
+			}
 
-			let siteUrl  = relativePath+siteName;;
+
 			let user = element.getFormattedValue(columnUser!.name);
 			let date = element.getFormattedValue(columnDate!.name);			
 			let ext = element.getFormattedValue(columnDocumentName!.name).toString().split(".").pop();
 
-			let record:IREcordInformation= {
+			let record:IRecordInformation= {
 				id:id,
 				name: element.getFormattedValue(columnDocumentName!.name).toString(),
-				absoluteUrl: element.getValue(columnAbsoluteUrl!.name).toString(),
+				absoluteUrl: absolutePath,//element.getValue(columnAbsoluteUrl!.name).toString(),
 				siteUrl: siteUrl,
 				date:date,
 				user:user,

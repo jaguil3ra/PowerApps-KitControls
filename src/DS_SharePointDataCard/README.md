@@ -1,12 +1,12 @@
 # SharePoint DocumentCard for D365 CE and the Model Driven Apps
 
-This is a custom control for DataSet. The preview of the document image only works with the SharePoint documents that are associated with entity records
+This is a custom control for DataSet. The viewer work with SharePoint and OneDrive documents that are associated with entity records
 
 This control uses [office fabric controls](https://developer.microsoft.com/en-us/fabric#/controls/web) 
 
 # How use in D365 CE/ Model Driven View
 
-You need create/use a view in the **SharePointDocument** entity.
+You need clone the view "All SharePoint Document" (Save as) in the **SharePointDocument** entity.
 
 ![](../../assets/pictures/sharepoint-entity.jpg)
 
