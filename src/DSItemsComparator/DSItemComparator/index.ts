@@ -151,6 +151,7 @@ export class DSItemComparator implements ComponentFramework.StandardControl<IInp
 
 	private readonly _borderColors:Array<string> = new Array<string>("#EDC951","#CC333F","#00A0B0","#024f8c","#673ab7","#8bc34a","#9e9e9e","#795548")
 
+	private _chartType:string;
 	//Body template for grid, it is binding with knockout
 	private readonly _bodyTemplate:string =`
 								<div class="main-flex">
@@ -375,6 +376,7 @@ export class DSItemComparator implements ComponentFramework.StandardControl<IInp
 	 */
 	public updateView(context: ComponentFramework.Context<IInputs>): void
 	{
+		this._chartType = this._context.parameters.chartType.raw;
 		this._context = context;	
 		let pageHelper:IPageHelper = this._context.parameters.itemsDataSet.paging;
 		this.pageSize = pageHelper.pageSize? pageHelper.pageSize: this.pageSize;
@@ -472,7 +474,7 @@ export class DSItemComparator implements ComponentFramework.StandardControl<IInp
 			datasets: this.setValuesToChart(selectedItems),
 		}
 		this._chart = new Chart(marksCanvas, {
-			type: 'radar',
+			type: this._chartType,
 			data: (marksData as any),
 			options:{
 				legend:{

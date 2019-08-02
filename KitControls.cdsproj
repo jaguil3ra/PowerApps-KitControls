@@ -16,7 +16,7 @@
   -->
   
   <ItemGroup>
-    <PackageReference Include="Microsoft.PowerApps.MSBuild.Solution" Version="0.1.*"/>
+    <PackageReference Include="Microsoft.PowerApps.MSBuild.Solution" Version="0.*"/>
   </ItemGroup>
   
   <ItemGroup>

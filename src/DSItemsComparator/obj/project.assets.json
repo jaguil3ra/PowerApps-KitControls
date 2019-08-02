@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     ".NETFramework,Version=v4.0": {
-      "Microsoft.PowerApps.MSBuild.Pcf/0.2.71": {
+      "Microsoft.PowerApps.MSBuild.Pcf/0.3.4": {
         "type": "package",
         "build": {
           "build/Microsoft.PowerApps.MSBuild.Pcf.props": {},
@@ -11,7 +11,7 @@
       }
     },
     ".NETFramework,Version=v4.0/win": {
-      "Microsoft.PowerApps.MSBuild.Pcf/0.2.71": {
+      "Microsoft.PowerApps.MSBuild.Pcf/0.3.4": {
         "type": "package",
         "build": {
           "build/Microsoft.PowerApps.MSBuild.Pcf.props": {},
@@ -20,7 +20,7 @@
       }
     },
     ".NETFramework,Version=v4.0/win-x64": {
-      "Microsoft.PowerApps.MSBuild.Pcf/0.2.71": {
+      "Microsoft.PowerApps.MSBuild.Pcf/0.3.4": {
         "type": "package",
         "build": {
           "build/Microsoft.PowerApps.MSBuild.Pcf.props": {},
@@ -29,7 +29,7 @@
       }
     },
     ".NETFramework,Version=v4.0/win-x86": {
-      "Microsoft.PowerApps.MSBuild.Pcf/0.2.71": {
+      "Microsoft.PowerApps.MSBuild.Pcf/0.3.4": {
         "type": "package",
         "build": {
           "build/Microsoft.PowerApps.MSBuild.Pcf.props": {},
@@ -39,17 +39,17 @@
     }
   },
   "libraries": {
-    "Microsoft.PowerApps.MSBuild.Pcf/0.2.71": {
-      "sha512": "dW7tt6MUm/2A3Dhms+4s6YLPnOkcNzn1SjNrvTFoSWooRTABvFvwNv28c1RT/awStxT8nFhU7AwE0Sfnuv07Ag==",
+    "Microsoft.PowerApps.MSBuild.Pcf/0.3.4": {
+      "sha512": "/v/QTsiz3E7Rrbc2tz+VY9GC5KsaEtZlTnSNdaRSb7EGR7/SiTCzFVlGHXReO9pX8dmKudxAId36/tu01Ea/Fg==",
       "type": "package",
-      "path": "microsoft.powerapps.msbuild.pcf/0.2.71",
+      "path": "microsoft.powerapps.msbuild.pcf/0.3.4",
       "files": [
         ".signature.p7s",
         "3rdPartyNotice.txt",
         "LICENSE.txt",
         "build/Microsoft.PowerApps.MSBuild.Pcf.props",
         "build/Microsoft.PowerApps.MSBuild.Pcf.targets",
-        "microsoft.powerapps.msbuild.pcf.0.2.71.nupkg.sha512",
+        "microsoft.powerapps.msbuild.pcf.0.3.4.nupkg.sha512",
         "microsoft.powerapps.msbuild.pcf.nuspec"
       ]
     }
@@ -65,11 +65,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dl_jo\\source\\repos\\_DynamicsCRM-365\\PowerAppsComponents\\FieldComponents\\KitControls\\src\\DSItemsComparator\\DSItemsComparator.pcfproj",
+      "projectUniqueName": "C:\\Users\\dl_jo\\source\\repos\\_DynamicsCRM-365\\PowerAppsComponents\\KitComponents\\KitControls\\src\\DSItemsComparator\\DSItemsComparator.pcfproj",
       "projectName": "DSItemsComparator",
-      "projectPath": "C:\\Users\\dl_jo\\source\\repos\\_DynamicsCRM-365\\PowerAppsComponents\\FieldComponents\\KitControls\\src\\DSItemsComparator\\DSItemsComparator.pcfproj",
+      "projectPath": "C:\\Users\\dl_jo\\source\\repos\\_DynamicsCRM-365\\PowerAppsComponents\\KitComponents\\KitControls\\src\\DSItemsComparator\\DSItemsComparator.pcfproj",
       "packagesPath": "C:\\Users\\dl_jo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dl_jo\\source\\repos\\_DynamicsCRM-365\\PowerAppsComponents\\FieldComponents\\KitControls\\src\\DSItemsComparator\\obj\\",
+      "outputPath": "C:\\Users\\dl_jo\\source\\repos\\_DynamicsCRM-365\\PowerAppsComponents\\KitComponents\\KitControls\\src\\DSItemsComparator\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [

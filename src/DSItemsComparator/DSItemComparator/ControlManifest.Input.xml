@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <manifest>
-  <control namespace="JAKitControls" constructor="DSItemComparator" version="0.0.1" display-name-key="DSItemComparator_Display_Key" description-key="DSItemComparator_Desc_Key" control-type="standard" >
+  <control namespace="JAKitControls" constructor="DSItemComparator" version="0.0.2" display-name-key="DSItemComparator_Display_Key" description-key="DSItemComparator_Desc_Key" control-type="standard" >
     <data-set name="itemsDataSet" display-name-key="ItemsDataset_Display_Key" description-key="ItemsDatasetProperty_Desc_Key">
       <property-set name="titlePropertySet" display-name-key="TitleProperty_Display_Key" description-key="TitleProperty_Desc_Key" of-type="SingleLine.Text" usage="input" required="true" />
       <property-set name="number1PropertySet" display-name-key="Number1Property_Display_Key" description-key="Property_Desc_Key" of-type-group="numbers" usage="input" required="true" />
@@ -13,10 +13,14 @@
       <property-set name="number8PropertySet" display-name-key="Number8Property_Display_Key" description-key="Property_Desc_Key" of-type-group="numbers" usage="input" required="false" />
     </data-set>
     <property name="imgNameproperty" display-name-key="PropertyImg_Display_Key" description-key="PropertyImg_Desc_Key" of-type="Enum" usage="input" required="false" >
-      <value name="YES" display-name-key="EnumYES_Display_Key" description-key="EnumYES_Desc_Key" >YES</value>    
-      <value name="NO" display-name-key="EnumNO_Display_Key" description-key="EnumNO_Desc_Key" default="true">NO</value>      
-        
+      <value name="YES" display-name-key="EnumYES_Display_Key" description-key="EnumYES_Desc_Key" default="true">YES</value>    
+      <value name="NO" display-name-key="EnumNO_Display_Key" description-key="EnumNO_Desc_Key" >NO</value>                  
     </property>
+    <property name="chartType" display-name-key="ChartType_Display_Key" description-key="ChartType_Desc_Key" of-type="Enum" usage="input" required="true" >
+      <value name="Radar" display-name-key="Radar_Display_Key" description-key="Radar_Desc_Key" default="true">radar</value>    
+      <value name="Line" display-name-key="Line_Display_Key" description-key="Line_Desc_Key" >line</value>                  
+      <value name="StackedGroups" display-name-key="StackedGroups_Display_Key" description-key="StackedGroups_Desc_Key" >bar</value>                                               
+    </property>    
     <type-group name="numbers">
       <type>Decimal</type>
       <type>FP</type>

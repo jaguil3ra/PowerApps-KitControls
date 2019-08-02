@@ -3,6 +3,7 @@
     height: 100%;
     overflow: auto;
     display:flex;
+    text-align: left;
 }
 .JAKitControls.DSItemComparator table {
     border-collapse: collapse;
