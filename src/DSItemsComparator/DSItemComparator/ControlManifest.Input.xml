@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <manifest>
-  <control namespace="JAKitControls" constructor="DSItemComparator" version="0.0.2" display-name-key="DSItemComparator_Display_Key" description-key="DSItemComparator_Desc_Key" control-type="standard" >
+  <control namespace="JAKitControls" constructor="DSItemComparator" version="0.0.3" display-name-key="DSItemComparator_Display_Key" description-key="DSItemComparator_Desc_Key" control-type="standard" >
     <data-set name="itemsDataSet" display-name-key="ItemsDataset_Display_Key" description-key="ItemsDatasetProperty_Desc_Key">
       <property-set name="titlePropertySet" display-name-key="TitleProperty_Display_Key" description-key="TitleProperty_Desc_Key" of-type="SingleLine.Text" usage="input" required="true" />
       <property-set name="number1PropertySet" display-name-key="Number1Property_Display_Key" description-key="Property_Desc_Key" of-type-group="numbers" usage="input" required="true" />

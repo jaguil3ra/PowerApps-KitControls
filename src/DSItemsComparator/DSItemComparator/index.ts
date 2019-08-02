@@ -169,7 +169,7 @@ export class DSItemComparator implements ComponentFramework.StandardControl<IInp
 											<tbody >
 												<!--ko foreach:productElements -->
 												<tr>
-													<td><button data-bind="css:isSelected() ?'icon icon-checkmark checkedbutton':'icon icon-checkbox-unchecked uncheckedbutton',click:$root.selectItem" ></button></td>
+													<td data-bind="click:$root.selectItem"><button data-bind="css:isSelected() ?'icon icon-checkmark checkedbutton':'icon icon-checkbox-unchecked uncheckedbutton'" ></button></td>
 													<!-- ko if:$root.hasPicture() -->
 													<td data-bind='click:$root.goToElementView'>
 													<img data-bind="attr: {src: img }" class="picture" onerror="this.onerror=null; this.src=''; this.className='defaulPicture'" />
