@@ -24,14 +24,13 @@ const App = (props:IProperties)=>{
 
     let elements=  props.elements.map((element)=>{
         return (<div className="customDocumentCard" key={element.id}>
-        <DocumentCard type={DocumentCardType.normal} onClick={()=>{window.open(element.absoluteUrl+"?web=1")}}>
+        <DocumentCard type={DocumentCardType.normal} onClick={()=>{window.open(element.absoluteUrl+"?web=1")}} style={{maxWidth:"320px"}}>
             <DocumentCardPreview  previewImages={[{
                 name: element.name,
                 previewImageSrc: element.siteUrl+"/_layouts/15/getpreview.ashx?path="+element.absoluteUrl,
-                height:120, 
-                imageFit:ImageFit.cover,
-                width:300,
-                iconSrc: baseProductionCdnUrl+element.ext,                
+                height:150, 
+                imageFit:ImageFit.center,
+                iconSrc: baseProductionCdnUrl+element.ext, 
             }]} />
             <DocumentCardDetails>
             <DocumentCardTitle
@@ -45,8 +44,8 @@ const App = (props:IProperties)=>{
     })
 
     return(
-        <div className="container">
-            {elements}
+        <div className="customContainer">
+            <div className="customBody">{elements}</div>
             <br/><PrimaryButton style={{marginLeft:"10px"}} disabled={!props.enableLoadMore} onClick={()=>{props.loadNextRecords()}}>Load more</PrimaryButton>
         </div>
     )

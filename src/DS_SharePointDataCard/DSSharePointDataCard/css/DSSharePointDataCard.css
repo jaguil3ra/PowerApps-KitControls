@@ -1,7 +1,11 @@
-.container{
+.JAKitControls\.DSSharePointDataCard .customContainer{
     text-align: left;
 }
-.customDocumentCard{
+.JAKitControls\.DSSharePointDataCard .customDocumentCard{
     display: inline-block;
     margin: 10px;
+    width: 320px;
+}
+.JAKitControls\.DSSharePointDataCard .customBody{
+    display: block;
 }
