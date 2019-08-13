@@ -12,7 +12,7 @@ The control needs a property that identifies the record (name) and at least thre
 
 *Download managed solution ready for install **[here](solution/DSItemsComparator.zip)***
 
-<a href="https://youtu.be/1c1OChnhgsA" ><img src="../../assets/pictures/item-comparator-preview.png" 
+<a href="https://youtu.be/1c1OChnhgsA" ><img src="../../assets/gif/items.gif" 
 alt="IMAGE ALT TEXT HERE" width="100%" height="100%" border="10" /></a>
 
 <a href="https://youtu.be/1c1OChnhgsA" ><img src="../../assets/pictures/barchart.jpg" 

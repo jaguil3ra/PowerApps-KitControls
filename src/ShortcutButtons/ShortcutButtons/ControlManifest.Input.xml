@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="JAKitControls" constructor="ShortcutButtons" version="0.0.6" display-name-key="ShortcutButtons_Display_Key" description-key="ShortcutButtons_Desc_Key" control-type="standard">
+    <!-- property node identifies a specific, configurable piece of data that the control expects from CDS -->
+    <property name="Name" display-name-key="Name_Display_Key" description-key="Name_Desc_Key" of-type="SingleLine.Text" usage="bound" required="true" />
+
+    <property name="buttonType" display-name-key="ButtonType_Display_Key" description-key="ButtonType_Desc_Key" of-type="Enum" usage="input" required="true" >
+      <value name="CompoundButtonCenter" display-name-key="CompoundButtonCenter_Display_Key" description-key="CompoundButtonCenter_Desc_Key">CompoundButtonCenter</value>
+      <value name="CompoundButtonLeft" display-name-key="CompoundButtonLeft_Display_Key" description-key="CompoundButtonLeft_Desc_Key">CompoundButtonLeft</value>      
+      <value name="ButtonOnlyIcon" display-name-key="ButtonOnlyIcon_Display_Key" description-key="ButtonOnlyIcon_Desc_Key">ButtonOnlyIcon</value>     
+      <value name="NormalButton" display-name-key="NormalButton_Display_Key" description-key="NormalButton_Desc_Key">NormalButton</value>       
+    </property>
+    <property name="buttonSize" display-name-key="ButtonSize_Display_Key" description-key="ButtonSize_Desc_Key" of-type="Enum" usage="input" required="true" >
+      <value name="Medium" display-name-key="Medium" description-key="Medium">Medium</value>
+      <value name="Large" display-name-key="Large" description-key="Large">Large</value>          
+    </property>
+    <property name="showButtonDescription" display-name-key="ShowButtonDescription" description-key="ShowButton_Display_Key_Desc_Key" of-type="Enum" usage="input" required="true" >
+      <value name="No" display-name-key="No" description-key="No" default="true">No</value>      
+      <value name="Yes" display-name-key="Yes" description-key="Yes">Yes</value>
+    </property>            
+    <property name="buttonNumber1" display-name-key="buttonNumber1_Display_Key" description-key="" of-type="SingleLine.Text" usage="input" required="true" />
+    <property name="buttonNumber2" display-name-key="buttonNumber2_Display_Key" description-key="" of-type="SingleLine.Text" usage="input" required="false" />
+    <property name="buttonNumber3" display-name-key="buttonNumber3_Display_Key" description-key="" of-type="SingleLine.Text" usage="input" required="false" />
+    <property name="buttonNumber4" display-name-key="buttonNumber4_Display_Key" description-key="" of-type="SingleLine.Text" usage="input" required="false" />
+    <type-group name="allTypes">
+      <type>SingleLine.Text</type>
+      <type>SingleLine.TextArea</type>
+      <type>SingleLine.URL</type>
+      <type>SingleLine.Ticker</type>
+      <type>SingleLine.Phone</type>
+      <type>SingleLine.Email</type>
+      <type>DateAndTime.DateAndTime</type>
+      <type>DateAndTime.DateOnly</type>
+      <type>OptionSet</type>
+      <type>Multiple</type>
+      <type>TwoOptions</type>
+      <type>Whole.None</type>
+      <type>Currency</type>
+      <type>FP</type>
+      <type>Decimal</type>
+    </type-group>
+    <resources>
+      <code path="index.ts" order="1"/>
+      <css path="css/ShortcutButtons.css" order="1" />
+      <!-- UNCOMMENT TO ADD MORE RESOURCES
+      
+      <resx path="strings/ShortcutButtons.1033.resx" version="1.0.0" />
+      -->
+    </resources>
+    <!-- UNCOMMENT TO ENABLE THE SPECIFIED API
+    <feature-usage>
+      <uses-feature name="Device.captureAudio" required="true" />
+      <uses-feature name="Device.captureImage" required="true" />
+      <uses-feature name="Device.captureVideo" required="true" />
+      <uses-feature name="Device.getBarcodeValue" required="true" />
+      <uses-feature name="Device.getCurrentPosition" required="true" />
+      <uses-feature name="Device.pickFile" required="true" />
+      <uses-feature name="Utility" required="true" />
+      <uses-feature name="WebAPI" required="true" />
+    </feature-usage>
+    -->
+  </control>
+</manifest>

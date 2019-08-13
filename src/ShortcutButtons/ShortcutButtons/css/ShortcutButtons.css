@@ -1,0 +1,22 @@
+.JAKitControls\.ShortcutButtons {
+    text-align: left;
+}
+
+.JAKitControls\.ShortcutButtons .icon-S{
+    font-size: 1em;
+}
+
+.JAKitControls\.ShortcutButtons .icon-M{
+    font-size: 2em;
+}
+.JAKitControls\.ShortcutButtons .icon-L{
+    font-size: 3em;
+    margin: 0px;
+}
+.JAKitControls\.ShortcutButtons .CustomButton{
+    flex-direction:column;
+}
+
+.JAKitControls\.ShortcutButtons button.is-disabled{
+    opacity: 0.2;
+}
