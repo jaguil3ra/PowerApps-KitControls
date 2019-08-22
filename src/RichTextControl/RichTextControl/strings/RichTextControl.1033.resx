@@ -147,5 +147,11 @@
   </data> 
   <data name="PropertyEnableImage_Desc_Key" xml:space="preserve">
     <value>IF enable images, the component convert the selected images in format base64. Be careful with the size of the images</value>
-  </data>   
+  </data>
+    <data name="PlainTextField_Display_Key" xml:space="preserve">
+    <value>Plain Text</value>
+  </data>     
+  <data name="PlainTextField_Desc_Key" xml:space="preserve">
+    <value>It Allows save the same value of rich text but without tag</value>
+  </data>        
 </root>

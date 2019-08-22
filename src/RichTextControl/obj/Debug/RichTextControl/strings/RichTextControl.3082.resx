@@ -148,10 +148,4 @@
   <data name="PropertyEnableImage_Desc_Key" xml:space="preserve">
     <value>Al habilitar las imagenes estas se incrustan en formato base64. Tener precaución con el tamaño</value>
   </data>   
-  <data name="PlainTextField_Display_Key" xml:space="preserve">
-    <value>Texto Plano</value>
-  </data>     
-  <data name="PlainTextField_Desc_Key" xml:space="preserve">
-    <value>Permite guardar el mismo valor sin formato ni etiquetas </value>
-  </data>      
 </root>
