@@ -4,8 +4,6 @@ This is a custom control that use the plugin [Quill JS](https://quilljs.com) to 
 
 Support images (base64) and videos (embedded) in the control
 
-Update: Now its allows save the same value without tags in other multiline field .
-
 *Download managed solution ready for install **[here](solution/RichTextControl.zip)***
 
 ![](../../assets/pictures/rich-text-preview.jpg)

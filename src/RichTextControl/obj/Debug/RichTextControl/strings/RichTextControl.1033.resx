@@ -118,40 +118,34 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="PropertyDisableMultimedia_Desc_Key" xml:space="preserve">
-    <value>Permite deshabilitar los botones para imágenes y videos. Precaución: Si la opción es "No" entonces podrás embeber imágenes y videos. Las imágenes son guardadas en base64 por lo que podrían ocupar mucho espacio</value>
+    <value>Let you enable button for embedded videos and images. Warning: if disable is false so you can embed images. The images are transformed to base64 and could take up a lot of space</value>
   </data>
   <data name="PropertyDisableMultimedia_Display_Key" xml:space="preserve">
-    <value>Deshabilitar botones multimedia</value>
+    <value>Disable Multimedia Options</value>
   </data>
   <data name="PropertyMultilineField_Desc_Key" xml:space="preserve">
-    <value>Control que permite ingresar texto enriquecido</value>
+    <value>It let you to write rich text in a multiline fields</value>
   </data>
   <data name="PropertyMultilineField_Display_Key" xml:space="preserve">
-    <value>Campo</value>
+    <value>Field</value>
   </data>
   <data name="RichTextControl_Desc_Key" xml:space="preserve">
-    <value>Un control que permite el uso de texto enriquecido para campos multilineas</value>
+    <value>A control that let you to write rich text for multiline fields</value>
   </data>
   <data name="RichTextControl_Display_Key" xml:space="preserve">
-    <value>Control de texto enriquecido</value>
+    <value>Rich text control</value>
   </data>
 
   <data name="PropertyEnableVideo_Display_Key" xml:space="preserve">
-    <value>Habilitar videos</value>
+    <value>Enable videos</value>
   </data> 
   <data name="PropertyEnableVideo_Desc_Key" xml:space="preserve">
-    <value>Permite incrustar videos a partir de un link</value>
+    <value>Enable embed videos in the control</value>
   </data>  
   <data name="PropertyEnableImage_Display_Key" xml:space="preserve">
-    <value>Habilitar imagenes</value>
+    <value>Enable images</value>
   </data> 
   <data name="PropertyEnableImage_Desc_Key" xml:space="preserve">
-    <value>Al habilitar las imagenes estas se incrustan en formato base64. Tener precaución con el tamaño</value>
+    <value>IF enable images, the component convert the selected images in format base64. Be careful with the size of the images</value>
   </data>   
-  <data name="PlainTextField_Display_Key" xml:space="preserve">
-    <value>Texto Plano</value>
-  </data>     
-  <data name="PlainTextField_Desc_Key" xml:space="preserve">
-    <value>Permite guardar el mismo valor sin formato ni etiquetas </value>
-  </data>      
 </root>
