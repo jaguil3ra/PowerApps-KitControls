@@ -2,15 +2,20 @@ import {IInputs, IOutputs} from "./generated/ManifestTypes";
 import DataSetInterfaces = ComponentFramework.PropertyHelper.DataSetApi;
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import App from './main';
+import App, { IAppProperties }  from './app';
 import IRecordInformation from './IRecordInformation';
+
 
 type DataSet = ComponentFramework.PropertyTypes.DataSet;
 
 export class DSSharePointDataCard implements ComponentFramework.StandardControl<IInputs, IOutputs> {
 	private _context:ComponentFramework.Context<IInputs>;
 	private _container:HTMLDivElement;
-	private _allRecord:Array<IRecordInformation>
+	private _allRecord=Array<IRecordInformation>()
+	private _i:number=0;
+
+
+
 	/**
 	 * Empty constructor.
 	 */
@@ -40,33 +45,50 @@ export class DSSharePointDataCard implements ComponentFramework.StandardControl<
 	 */
 	public updateView(context: ComponentFramework.Context<IInputs>): void
 	{
-
+		console.log("Paso por el update");
+		this._context = context;
 		let dataset = context.parameters.sampleDataSet;
-		if(!dataset.loading){
-			this.recordRecorator(dataset);
-			ReactDOM.render(
-				React.createElement(
-					App,
-					{ 
-						elements:this._allRecord,
-						enableLoadMore :dataset.paging.hasNextPage,
-						loadNextRecords:()=>{
-							dataset.paging.loadNextPage();
-						}
+		this.recordsDecorator(dataset);
+
+		ReactDOM.render(
+			React.createElement(
+				App,
+				{ 
+					elements: this._allRecord,
+					enableLoadMore : this._context ?  this._context.parameters.sampleDataSet.paging.hasNextPage:false,
+					loadNextRecords: this.loadNextRecords.bind(this),
+					setSelectedRecord:(recordsIds:Array<string>)=>{
+						this.notififySelectedRecords(recordsIds);
 					}
-				),
-				this._container
-			);
-		}
+				}
+			),
+			this._container
+		);
+
+
+
+
+
 	}
 
-	private recordRecorator(dataset: DataSet)
+	private notififySelectedRecords(recordsIds:Array<string>)
+	{
+		this._context.parameters.sampleDataSet.setSelectedRecordIds(recordsIds);
+	}
+
+
+	private loadNextRecords(){
+		this._context.parameters.sampleDataSet.paging.loadNextPage();
+	}
+
+	private recordsDecorator(dataset: DataSet)
 	{
 		let currentdIds = dataset.sortedRecordIds;
 		let tempAllRecord = Array<IRecordInformation>()
 
 		currentdIds.forEach(id=>{
 			let element = dataset.records[id];
+			
 			//defined the columns
 			let columnAbsoluteUrl = dataset.columns.find(p => p.alias == "urlAbsolute");
 			let columnUser = dataset.columns.find(p => p.alias == "author");
@@ -102,15 +124,20 @@ export class DSSharePointDataCard implements ComponentFramework.StandardControl<
 			let user = element.getFormattedValue(columnUser!.name);
 			let date = element.getFormattedValue(columnDate!.name);			
 			let ext = element.getFormattedValue(columnDocumentName!.name).toString().split(".").pop();
+			console.log((element.getValue("ischeckedout") as number));
+			let isSelected = dataset.getSelectedRecordIds().find(p => p == id) != undefined;
 
+			let isCheckOut = (element.getValue("ischeckedout") as number) == 1;
 			let record:IRecordInformation= {
 				id:id,
 				name: element.getFormattedValue(columnDocumentName!.name).toString(),
-				absoluteUrl: absolutePath,//element.getValue(columnAbsoluteUrl!.name).toString(),
+				absoluteUrl: absolutePath,
 				siteUrl: siteUrl,
 				date:date,
 				user:user,
-				ext:ext+".png"
+				ext:ext+".png",
+				selected:isSelected,
+				isCheckOut				
 			}
 
 			tempAllRecord.push(record);

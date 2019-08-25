@@ -5,7 +5,9 @@ interface IRecordInformation{
     siteUrl: string,
     date:string,
     user:string,
-    ext:string
+    ext:string,
+    selected?:boolean
+    isCheckOut?:boolean
 }
 
 export default IRecordInformation;
