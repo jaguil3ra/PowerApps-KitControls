@@ -12,8 +12,6 @@ export class DSSharePointDataCard implements ComponentFramework.StandardControl<
 	private _context:ComponentFramework.Context<IInputs>;
 	private _container:HTMLDivElement;
 	private _allRecord=Array<IRecordInformation>()
-	private _i:number=0;
-
 
 
 	/**
@@ -45,11 +43,9 @@ export class DSSharePointDataCard implements ComponentFramework.StandardControl<
 	 */
 	public updateView(context: ComponentFramework.Context<IInputs>): void
 	{
-		console.log("Paso por el update");
 		this._context = context;
 		let dataset = context.parameters.sampleDataSet;
 		this.recordsDecorator(dataset);
-
 		ReactDOM.render(
 			React.createElement(
 				App,
@@ -57,23 +53,18 @@ export class DSSharePointDataCard implements ComponentFramework.StandardControl<
 					elements: this._allRecord,
 					enableLoadMore : this._context ?  this._context.parameters.sampleDataSet.paging.hasNextPage:false,
 					loadNextRecords: this.loadNextRecords.bind(this),
-					setSelectedRecord:(recordsIds:Array<string>)=>{
-						this.notififySelectedRecords(recordsIds);
-					}
+					setSelectedRecord:this.notififySelectedRecords.bind(this)
 				}
 			),
 			this._container
 		);
-
-
-
-
-
 	}
 
-	private notififySelectedRecords(recordsIds:Array<string>)
+	private notififySelectedRecords(recordId:string)
 	{
-		this._context.parameters.sampleDataSet.setSelectedRecordIds(recordsIds);
+		let currentRecord = this._allRecord.find(p => p.id == recordId)!;
+		currentRecord.selected = !currentRecord.selected
+		this._context.parameters.sampleDataSet.setSelectedRecordIds(this._allRecord.filter(p => p.selected).map( p=> { return p.id}));
 	}
 
 
@@ -86,7 +77,7 @@ export class DSSharePointDataCard implements ComponentFramework.StandardControl<
 		let currentdIds = dataset.sortedRecordIds;
 		let tempAllRecord = Array<IRecordInformation>()
 
-		currentdIds.forEach(id=>{
+		currentdIds.forEach(id => {
 			let element = dataset.records[id];
 			
 			//defined the columns
@@ -124,9 +115,11 @@ export class DSSharePointDataCard implements ComponentFramework.StandardControl<
 			let user = element.getFormattedValue(columnUser!.name);
 			let date = element.getFormattedValue(columnDate!.name);			
 			let ext = element.getFormattedValue(columnDocumentName!.name).toString().split(".").pop();
-			console.log((element.getValue("ischeckedout") as number));
-			let isSelected = dataset.getSelectedRecordIds().find(p => p == id) != undefined;
-
+			let selectedRecordIds = dataset.getSelectedRecordIds();
+			let isSelected = false;
+			if(selectedRecordIds != undefined){
+				isSelected = dataset.getSelectedRecordIds().find(p => p == id) != undefined;
+			}
 			let isCheckOut = (element.getValue("ischeckedout") as number) == 1;
 			let record:IRecordInformation= {
 				id:id,

@@ -34,12 +34,18 @@
     border: 2px solid white;
     background: #0b93ff;
 }
-.JAKitControls\.DSSharePointDataCard .cardStatus{
+.JAKitControls\.DSSharePointDataCard .cardCheckInStatus{
     font-size: 20px;
     line-height: 18px;
     text-align: right;
+    color: #009688;
 }
-
+.JAKitControls\.DSSharePointDataCard .cardCheckOutStatus{
+    font-size: 20px;
+    line-height: 18px;
+    text-align: right;
+    color: #e91e63;
+}
 .JAKitControls\.DSSharePointDataCard .emptySelect{
     position: absolute;
     z-index: auto;
