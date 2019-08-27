@@ -46,14 +46,15 @@ export class DSSharePointDataCard implements ComponentFramework.StandardControl<
 		this._context = context;
 		let dataset = context.parameters.sampleDataSet;
 		this.recordsDecorator(dataset);
+		dataset.setSelectedRecordIds([]);
 		ReactDOM.render(
 			React.createElement(
 				App,
 				{ 
 					elements: this._allRecord,
-					enableLoadMore : this._context ?  this._context.parameters.sampleDataSet.paging.hasNextPage:false,
+					enableLoadMore : this._context.parameters.sampleDataSet.paging.hasNextPage,
 					loadNextRecords: this.loadNextRecords.bind(this),
-					setSelectedRecord:this.notififySelectedRecords.bind(this)
+					setSelectedRecord: this.notififySelectedRecords.bind(this)
 				}
 			),
 			this._container
@@ -116,10 +117,12 @@ export class DSSharePointDataCard implements ComponentFramework.StandardControl<
 			let date = element.getFormattedValue(columnDate!.name);			
 			let ext = element.getFormattedValue(columnDocumentName!.name).toString().split(".").pop();
 			let selectedRecordIds = dataset.getSelectedRecordIds();
+			/*
 			let isSelected = false;
 			if(selectedRecordIds != undefined){
 				isSelected = dataset.getSelectedRecordIds().find(p => p == id) != undefined;
 			}
+			*/
 			let isCheckOut = (element.getValue("ischeckedout") as number) == 1;
 			let record:IRecordInformation= {
 				id:id,
@@ -129,7 +132,7 @@ export class DSSharePointDataCard implements ComponentFramework.StandardControl<
 				date:date,
 				user:user,
 				ext:ext+".png",
-				selected:isSelected,
+				selected:false,
 				isCheckOut				
 			}
 

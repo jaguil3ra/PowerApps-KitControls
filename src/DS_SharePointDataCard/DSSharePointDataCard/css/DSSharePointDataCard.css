@@ -4,6 +4,10 @@
 .JAKitControls\.DSSharePointDataCard {
     margin-left: 15px;
     margin-top: 10px;
+    /*
+    overflow-y: auto;
+    max-height: 700px;
+    */
 }
 .JAKitControls\.DSSharePointDataCard .customDocumentCard{
     display: inline-block;
