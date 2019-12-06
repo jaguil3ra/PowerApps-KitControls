@@ -16,7 +16,7 @@
     "react-dom": "^16.8.6"
   },
   "devDependencies": {
-    "@types/react": "^16.8.24",
+    "@types/react": "^16.9.15",
     "pcf-scripts": "^0.3.4",
     "pcf-start": "^0.3.4"
   }

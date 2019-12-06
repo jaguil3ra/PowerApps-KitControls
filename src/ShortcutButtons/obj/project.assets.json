@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     ".NETFramework,Version=v4.6.2": {
-      "Microsoft.PowerApps.MSBuild.Pcf/0.3.4": {
+      "Microsoft.PowerApps.MSBuild.Pcf/1.1.6": {
         "type": "package",
         "build": {
           "build/Microsoft.PowerApps.MSBuild.Pcf.props": {},
@@ -11,7 +11,7 @@
       }
     },
     ".NETFramework,Version=v4.6.2/win": {
-      "Microsoft.PowerApps.MSBuild.Pcf/0.3.4": {
+      "Microsoft.PowerApps.MSBuild.Pcf/1.1.6": {
         "type": "package",
         "build": {
           "build/Microsoft.PowerApps.MSBuild.Pcf.props": {},
@@ -20,7 +20,7 @@
       }
     },
     ".NETFramework,Version=v4.6.2/win-x64": {
-      "Microsoft.PowerApps.MSBuild.Pcf/0.3.4": {
+      "Microsoft.PowerApps.MSBuild.Pcf/1.1.6": {
         "type": "package",
         "build": {
           "build/Microsoft.PowerApps.MSBuild.Pcf.props": {},
@@ -29,7 +29,7 @@
       }
     },
     ".NETFramework,Version=v4.6.2/win-x86": {
-      "Microsoft.PowerApps.MSBuild.Pcf/0.3.4": {
+      "Microsoft.PowerApps.MSBuild.Pcf/1.1.6": {
         "type": "package",
         "build": {
           "build/Microsoft.PowerApps.MSBuild.Pcf.props": {},
@@ -39,24 +39,24 @@
     }
   },
   "libraries": {
-    "Microsoft.PowerApps.MSBuild.Pcf/0.3.4": {
-      "sha512": "/v/QTsiz3E7Rrbc2tz+VY9GC5KsaEtZlTnSNdaRSb7EGR7/SiTCzFVlGHXReO9pX8dmKudxAId36/tu01Ea/Fg==",
+    "Microsoft.PowerApps.MSBuild.Pcf/1.1.6": {
+      "sha512": "wZuUuxN3FlogWGFQqOAUb0V85TPeiXonBXgG9B2h0a/krn6f3iAj9to7dAs/9KghIaUv4f8pYrHBMM35oXMlWA==",
       "type": "package",
-      "path": "microsoft.powerapps.msbuild.pcf/0.3.4",
+      "path": "microsoft.powerapps.msbuild.pcf/1.1.6",
       "files": [
         ".signature.p7s",
         "3rdPartyNotice.txt",
         "LICENSE.txt",
         "build/Microsoft.PowerApps.MSBuild.Pcf.props",
         "build/Microsoft.PowerApps.MSBuild.Pcf.targets",
-        "microsoft.powerapps.msbuild.pcf.0.3.4.nupkg.sha512",
+        "microsoft.powerapps.msbuild.pcf.1.1.6.nupkg.sha512",
         "microsoft.powerapps.msbuild.pcf.nuspec"
       ]
     }
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.6.2": [
-      "Microsoft.PowerApps.MSBuild.Pcf >= 0.*"
+      "Microsoft.PowerApps.MSBuild.Pcf >= 1.*"
     ]
   },
   "packageFolders": {
@@ -65,11 +65,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dl_jo\\source\\repos\\_DynamicsCRM-365\\PowerAppsComponents\\CustomComponents\\UtilsComponents\\ShortcutButtons\\ShortcutButtons.pcfproj",
+      "projectUniqueName": "C:\\Users\\dl_jo\\source\\repos\\_DynamicsCRM-365\\PowerAppsComponents\\KitComponentsNew\\PowerApps-KitControls\\src\\ShortcutButtons\\ShortcutButtons.pcfproj",
       "projectName": "ShortcutButtons",
-      "projectPath": "C:\\Users\\dl_jo\\source\\repos\\_DynamicsCRM-365\\PowerAppsComponents\\CustomComponents\\UtilsComponents\\ShortcutButtons\\ShortcutButtons.pcfproj",
+      "projectPath": "C:\\Users\\dl_jo\\source\\repos\\_DynamicsCRM-365\\PowerAppsComponents\\KitComponentsNew\\PowerApps-KitControls\\src\\ShortcutButtons\\ShortcutButtons.pcfproj",
       "packagesPath": "C:\\Users\\dl_jo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dl_jo\\source\\repos\\_DynamicsCRM-365\\PowerAppsComponents\\CustomComponents\\UtilsComponents\\ShortcutButtons\\obj\\",
+      "outputPath": "C:\\Users\\dl_jo\\source\\repos\\_DynamicsCRM-365\\PowerAppsComponents\\KitComponentsNew\\PowerApps-KitControls\\src\\ShortcutButtons\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\dl_jo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -93,7 +93,7 @@
         "dependencies": {
           "Microsoft.PowerApps.MSBuild.Pcf": {
             "target": "Package",
-            "version": "[0.*, )"
+            "version": "[1.*, )"
           }
         }
       }

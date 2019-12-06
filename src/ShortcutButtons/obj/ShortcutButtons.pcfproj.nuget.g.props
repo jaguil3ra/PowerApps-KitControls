@@ -3,7 +3,7 @@
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
     <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
-    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">C:\Users\dl_jo\source\repos\_DynamicsCRM-365\PowerAppsComponents\CustomComponents\UtilsComponents\ShortcutButtons\obj\project.assets.json</ProjectAssetsFile>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">C:\Users\dl_jo\source\repos\_DynamicsCRM-365\PowerAppsComponents\KitComponentsNew\PowerApps-KitControls\src\ShortcutButtons\obj\project.assets.json</ProjectAssetsFile>
     <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
     <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\dl_jo\.nuget\packages\</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
@@ -13,6 +13,6 @@
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
   </PropertyGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="$(NuGetPackageRoot)microsoft.powerapps.msbuild.pcf\0.3.4\build\Microsoft.PowerApps.MSBuild.Pcf.props" Condition="Exists('$(NuGetPackageRoot)microsoft.powerapps.msbuild.pcf\0.3.4\build\Microsoft.PowerApps.MSBuild.Pcf.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.powerapps.msbuild.pcf\1.1.6\build\Microsoft.PowerApps.MSBuild.Pcf.props" Condition="Exists('$(NuGetPackageRoot)microsoft.powerapps.msbuild.pcf\1.1.6\build\Microsoft.PowerApps.MSBuild.Pcf.props')" />
   </ImportGroup>
 </Project>

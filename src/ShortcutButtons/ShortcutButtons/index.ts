@@ -38,6 +38,14 @@ export class ShortcutButtons implements ComponentFramework.StandardControl<IInpu
 
 
 	private setFormData(){
+
+		if(["Mobile","Outlook"].indexOf(this._context.client.getClient()) != -1){
+			//@ts-ignore
+			let entityRef = Xrm.Page._entityReference;
+			this._entity = entityRef.etn;
+			this._recordId  = entityRef.id.guid;
+			return;
+		}
 		var queryString = window.location.search.slice(1);
 		var arr = queryString.split('&');
 		let parameters: { [id:string] : string} = {
@@ -47,12 +55,17 @@ export class ShortcutButtons implements ComponentFramework.StandardControl<IInpu
 			let keyvalue = element.split("=");
 			parameters[keyvalue[0]] = keyvalue[1];
 		})
+
+
+
 		this._entity=parameters["etn"];
 		this._recordId  = parameters["id"];
 	}
 	public updateView(context: ComponentFramework.Context<IInputs>): void
 	{
 		this._context = context;
+
+		context.client.getClient()
 		this.setFormData();
 		this.renderComponent(context);
 	}

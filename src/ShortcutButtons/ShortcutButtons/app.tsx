@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { CompoundButton, IButtonStyles, Button } from 'office-ui-fabric-react';
-import { initializeIcons } from '@uifabric/icons';
+import { CompoundButton, IButtonStyles, Button, initializeIcons} from 'office-ui-fabric-react';
+//import { initializeIcons } from '@uifabric/icons';
 import IButtonProperty from './IButtonProperty';
 initializeIcons();
 
