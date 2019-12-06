@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <manifest>
-  <control namespace="JAKitControls" constructor="RichTextControl" version="0.0.7" display-name-key="RichTextControl_Display_Key" description-key="RichTextControl_Desc_Key" control-type="standard" preview-image="preview.png" >
+  <control namespace="JAKitControls" constructor="RichTextControl" version="0.0.7" display-name-key="RichTextControl_Display_Key" description-key="RichTextControl_Desc_Key" control-type="standard" preview-image="imgs/preview.png" >
     <!--<modes>
       <read />
       <edit />
@@ -45,7 +45,7 @@
       <css path="css/RichTextControl.css" order="1" />
       <resx path="strings/RichTextControl.1033.resx" version="1.0.0" />
       <resx path="strings/RichTextControl.3082.resx" version="1.0.0" />
-      <img path="preview.png" />
+      <img path="imgs/preview.png" />
     </resources>
   </control>
 </manifest>
