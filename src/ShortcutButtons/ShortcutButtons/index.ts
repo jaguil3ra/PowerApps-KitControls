@@ -42,6 +42,8 @@ export class ShortcutButtons implements ComponentFramework.StandardControl<IInpu
 		if(["Mobile","Outlook"].indexOf(this._context.client.getClient()) != -1){
 			//@ts-ignore
 			let entityRef = Xrm.Page._entityReference;
+			if(entityRef.id == 	undefined) return;
+
 			this._entity = entityRef.etn;
 			this._recordId  = entityRef.id.guid;
 			return;
@@ -64,8 +66,6 @@ export class ShortcutButtons implements ComponentFramework.StandardControl<IInpu
 	public updateView(context: ComponentFramework.Context<IInputs>): void
 	{
 		this._context = context;
-
-		context.client.getClient()
 		this.setFormData();
 		this.renderComponent(context);
 	}

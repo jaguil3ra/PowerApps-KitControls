@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <manifest>
-  <control namespace="JAKitControls" constructor="ShortcutButtons" version="0.0.7" display-name-key="ShortcutButtons_Display_Key" description-key="ShortcutButtons_Desc_Key" control-type="standard">
+  <control namespace="JAKitControls" constructor="ShortcutButtons" version="0.0.8" display-name-key="ShortcutButtons_Display_Key" description-key="ShortcutButtons_Desc_Key" control-type="standard">
     <!-- property node identifies a specific, configurable piece of data that the control expects from CDS -->
     <property name="Name" display-name-key="Name_Display_Key" description-key="Name_Desc_Key" of-type="SingleLine.Text" usage="bound" required="true" />
 
