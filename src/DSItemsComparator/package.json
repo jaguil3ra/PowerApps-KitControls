@@ -9,9 +9,9 @@
     "start": "pcf-scripts start"
   },
   "dependencies": {
-    "@types/chart.js": "^2.7.56",
+    "@types/chart.js": "^2.9.4",
     "@types/knockout": "^3.4.66",
-    "@types/node": "^10.14.14",
+    "@types/node": "^10.17.7",
     "@types/powerapps-component-framework": "1.1.0",
     "chart.js": "^2.8.0",
     "knockout": "^3.5.0",
