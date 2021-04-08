@@ -1,0 +1,19 @@
+2021-04-08 13:47:56.002 - Info	
+Packing C:\Users\dl_jo\repos\D365\PowerApps-KitControls\src\DS_SharePointDataCard\solution\DS_SharePointDataCardSolution\obj\Debug\Metadata to bin\Debug\DS_SharePointDataCardSolution.zip
+
+2021-04-08 13:47:56.024 - Info	Processing Component: Entities
+2021-04-08 13:47:56.029 - Info	Processing Component: Roles
+2021-04-08 13:47:56.033 - Info	Processing Component: Workflows
+2021-04-08 13:47:56.034 - Info	Processing Component: FieldSecurityProfiles
+2021-04-08 13:47:56.034 - Info	Processing Component: Templates
+2021-04-08 13:47:56.035 - Info	Processing Component: EntityMaps
+2021-04-08 13:47:56.035 - Info	Processing Component: EntityRelationships
+2021-04-08 13:47:56.045 - Info	Processing Component: OrganizationSettings
+2021-04-08 13:47:56.046 - Info	Processing Component: optionsets
+2021-04-08 13:47:56.046 - Info	Processing Component: CustomControls
+2021-04-08 13:47:56.063 - Info	 - JAKitControls.DSSharePointDataCard
+2021-04-08 13:47:56.435 - Info	Processing Component: SolutionPluginAssemblies
+2021-04-08 13:47:56.438 - Info	Processing Component: EntityDataProviders
+2021-04-08 13:47:56.644 - Info	
+Managed Pack complete.
+
