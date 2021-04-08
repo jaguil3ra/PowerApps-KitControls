@@ -1,0 +1,56 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\dl_jo\\repos\\D365\\PowerApps-KitControls\\src\\DS_SharePointDataCard\\DS_SharePointDataCard.pcfproj": {}
+  },
+  "projects": {
+    "C:\\Users\\dl_jo\\repos\\D365\\PowerApps-KitControls\\src\\DS_SharePointDataCard\\DS_SharePointDataCard.pcfproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\dl_jo\\repos\\D365\\PowerApps-KitControls\\src\\DS_SharePointDataCard\\DS_SharePointDataCard.pcfproj",
+        "projectName": "DS_SharePointDataCard",
+        "projectPath": "C:\\Users\\dl_jo\\repos\\D365\\PowerApps-KitControls\\src\\DS_SharePointDataCard\\DS_SharePointDataCard.pcfproj",
+        "packagesPath": "C:\\Users\\dl_jo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dl_jo\\repos\\D365\\PowerApps-KitControls\\src\\DS_SharePointDataCard\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\dl_jo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net462"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net462": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net462": {
+          "dependencies": {
+            "Microsoft.PowerApps.MSBuild.Pcf": {
+              "target": "Package",
+              "version": "[1.*, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

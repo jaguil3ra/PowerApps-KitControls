@@ -98,7 +98,13 @@ export class DSSharePointDataCard implements ComponentFramework.StandardControl<
 				relativePath = absolutePath.substring(0,absolutePath.indexOf("/sites/")+7);
 				let tempPath = absolutePath.substring(absolutePath.indexOf("/sites/")+7);
 				siteName = tempPath.substring(0, tempPath.indexOf('/'));
-				siteUrl  = relativePath+siteName;;
+				siteUrl  = relativePath+siteName;
+			//Check if is sharepoint site with teams path
+			}else if(absolutePath.indexOf("/teams/") != -1){
+				relativePath = absolutePath.substring(0,absolutePath.indexOf("/teams/")+7);
+				let tempPath = absolutePath.substring(absolutePath.indexOf("/teams/")+7);
+				siteName = tempPath.substring(0, tempPath.indexOf('/'));
+				siteUrl  = relativePath+siteName;				
 			}
 			//Check if is onedrive site
 			else if(absolutePath.indexOf("my.sharepoint.com/personal/") != -1){
@@ -139,7 +145,7 @@ export class DSSharePointDataCard implements ComponentFramework.StandardControl<
 			tempAllRecord.push(record);
 
 		})
-		this._allRecord=tempAllRecord;
+		this._allRecord = tempAllRecord;
 	}
 
 

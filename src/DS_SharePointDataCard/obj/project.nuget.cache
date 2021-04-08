@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "filBZMfhLeg6YVD1Me9MsUt9hR34PJfPWgaoXVeBtmMnM6a8o6Jf7QrhQqtrTTWn9SG+9w4k4U3wF2u7bZqa0w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\dl_jo\\repos\\D365\\PowerApps-KitControls\\src\\DS_SharePointDataCard\\DS_SharePointDataCard.pcfproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dl_jo\\.nuget\\packages\\microsoft.powerapps.msbuild.pcf\\1.5.5\\microsoft.powerapps.msbuild.pcf.1.5.5.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -3,16 +3,19 @@
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
     <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
-    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">C:\Users\dl_jo\source\repos\_DynamicsCRM-365\PowerAppsComponents\KitComponents\KitControls\src\DS_SharePointDataCard\obj\project.assets.json</ProjectAssetsFile>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
     <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
     <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\dl_jo\.nuget\packages\</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
-    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">4.8.1</NuGetToolVersion>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">5.7.0</NuGetToolVersion>
   </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <SourceRoot Include="$([MSBuild]::EnsureTrailingSlash($(NuGetPackageFolders)))" />
+  </ItemGroup>
   <PropertyGroup>
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
   </PropertyGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="$(NuGetPackageRoot)microsoft.powerapps.msbuild.pcf\0.3.4\build\Microsoft.PowerApps.MSBuild.Pcf.props" Condition="Exists('$(NuGetPackageRoot)microsoft.powerapps.msbuild.pcf\0.3.4\build\Microsoft.PowerApps.MSBuild.Pcf.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.powerapps.msbuild.pcf\1.5.5\build\Microsoft.PowerApps.MSBuild.Pcf.props" Condition="Exists('$(NuGetPackageRoot)microsoft.powerapps.msbuild.pcf\1.5.5\build\Microsoft.PowerApps.MSBuild.Pcf.props')" />
   </ImportGroup>
 </Project>

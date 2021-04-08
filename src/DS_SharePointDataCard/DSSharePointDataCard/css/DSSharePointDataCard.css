@@ -1,63 +1,60 @@
-.JAKitControls\.DSSharePointDataCard .customContainer{
-    text-align: left;
+.JAKitControls\.DSSharePointDataCard .customContainer {
+  text-align: left;
 }
 .JAKitControls\.DSSharePointDataCard {
-    margin-left: 15px;
-    margin-top: 10px;
-    /*
-    overflow-y: auto;
-    max-height: 700px;
-    */
+  margin-left: 15px;
+  margin-top: 10px;
+  overflow-y: auto;
 }
-.JAKitControls\.DSSharePointDataCard .customDocumentCard{
-    display: inline-block;
-    width: 340px;
-    margin-bottom: 15px;
+.JAKitControls\.DSSharePointDataCard .customDocumentCard {
+  display: inline-block;
+  width: 340px;
+  margin-bottom: 15px;
 }
-.JAKitControls\.DSSharePointDataCard .ms-DocumentCard:hover{
-    border: solid 2px #0b93ff;
+.JAKitControls\.DSSharePointDataCard .ms-DocumentCard:hover {
+  border: solid 2px #0b93ff;
 }
-.JAKitControls\.DSSharePointDataCard .ms-DocumentCard.selected{
-    border: solid 2px #0b93ff;
+.JAKitControls\.DSSharePointDataCard .ms-DocumentCard.selected {
+  border: solid 2px #0b93ff;
 }
-.JAKitControls\.DSSharePointDataCard .ms-DocumentCard{
-    border: 2px solid rgb(237, 235, 233);
-    cursor: pointer;
+.JAKitControls\.DSSharePointDataCard .ms-DocumentCard {
+  border: 2px solid rgb(237, 235, 233);
+  cursor: pointer;
 }
-.JAKitControls\.DSSharePointDataCard .customBody{
-    display: block;
+.JAKitControls\.DSSharePointDataCard .customBody {
+  display: block;
 }
 
-.JAKitControls\.DSSharePointDataCard .selectedCard{
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    color: white;
-    font-size: 20px;
-    border-radius: 50%;
-    border: 2px solid white;
-    background: #0b93ff;
+.JAKitControls\.DSSharePointDataCard .selectedCard {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: white;
+  font-size: 20px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background: #0b93ff;
 }
-.JAKitControls\.DSSharePointDataCard .cardCheckInStatus{
-    font-size: 20px;
-    line-height: 18px;
-    text-align: right;
-    color: #009688;
+.JAKitControls\.DSSharePointDataCard .cardCheckInStatus {
+  font-size: 20px;
+  line-height: 18px;
+  text-align: right;
+  color: #009688;
 }
-.JAKitControls\.DSSharePointDataCard .cardCheckOutStatus{
-    font-size: 20px;
-    line-height: 18px;
-    text-align: right;
-    color: #e91e63;
+.JAKitControls\.DSSharePointDataCard .cardCheckOutStatus {
+  font-size: 20px;
+  line-height: 18px;
+  text-align: right;
+  color: #e91e63;
 }
-.JAKitControls\.DSSharePointDataCard .emptySelect{
-    position: absolute;
-    z-index: auto;
-    right: 10px;
-    top:10px;
-    color: white;
-    background: white;
-    font-size: 20px;
-    border: 2px solid #c5c5c5;
-    border-radius: 50%;
+.JAKitControls\.DSSharePointDataCard .emptySelect {
+  position: absolute;
+  z-index: auto;
+  right: 10px;
+  top: 10px;
+  color: white;
+  background: white;
+  font-size: 20px;
+  border: 2px solid #c5c5c5;
+  border-radius: 50%;
 }

@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     ".NETFramework,Version=v4.6.2": {
-      "Microsoft.PowerApps.MSBuild.Pcf/0.3.4": {
+      "Microsoft.PowerApps.MSBuild.Pcf/1.5.5": {
         "type": "package",
         "build": {
           "build/Microsoft.PowerApps.MSBuild.Pcf.props": {},
@@ -11,7 +11,7 @@
       }
     },
     ".NETFramework,Version=v4.6.2/win": {
-      "Microsoft.PowerApps.MSBuild.Pcf/0.3.4": {
+      "Microsoft.PowerApps.MSBuild.Pcf/1.5.5": {
         "type": "package",
         "build": {
           "build/Microsoft.PowerApps.MSBuild.Pcf.props": {},
@@ -20,7 +20,7 @@
       }
     },
     ".NETFramework,Version=v4.6.2/win-x64": {
-      "Microsoft.PowerApps.MSBuild.Pcf/0.3.4": {
+      "Microsoft.PowerApps.MSBuild.Pcf/1.5.5": {
         "type": "package",
         "build": {
           "build/Microsoft.PowerApps.MSBuild.Pcf.props": {},
@@ -29,7 +29,7 @@
       }
     },
     ".NETFramework,Version=v4.6.2/win-x86": {
-      "Microsoft.PowerApps.MSBuild.Pcf/0.3.4": {
+      "Microsoft.PowerApps.MSBuild.Pcf/1.5.5": {
         "type": "package",
         "build": {
           "build/Microsoft.PowerApps.MSBuild.Pcf.props": {},
@@ -39,24 +39,25 @@
     }
   },
   "libraries": {
-    "Microsoft.PowerApps.MSBuild.Pcf/0.3.4": {
-      "sha512": "/v/QTsiz3E7Rrbc2tz+VY9GC5KsaEtZlTnSNdaRSb7EGR7/SiTCzFVlGHXReO9pX8dmKudxAId36/tu01Ea/Fg==",
+    "Microsoft.PowerApps.MSBuild.Pcf/1.5.5": {
+      "sha512": "CImUwLfWTc2xoYnJeWLUni25Yo+JL1Nd/k4Lo0tOPTwK9Khbw2STgtHjPLChlMvUWDg3CrJJtA8WJa4/uY0JdA==",
       "type": "package",
-      "path": "microsoft.powerapps.msbuild.pcf/0.3.4",
+      "path": "microsoft.powerapps.msbuild.pcf/1.5.5",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "3rdPartyNotice.txt",
         "LICENSE.txt",
         "build/Microsoft.PowerApps.MSBuild.Pcf.props",
         "build/Microsoft.PowerApps.MSBuild.Pcf.targets",
-        "microsoft.powerapps.msbuild.pcf.0.3.4.nupkg.sha512",
+        "microsoft.powerapps.msbuild.pcf.1.5.5.nupkg.sha512",
         "microsoft.powerapps.msbuild.pcf.nuspec"
       ]
     }
   },
   "projectFileDependencyGroups": {
     ".NETFramework,Version=v4.6.2": [
-      "Microsoft.PowerApps.MSBuild.Pcf >= 0.*"
+      "Microsoft.PowerApps.MSBuild.Pcf >= 1.*"
     ]
   },
   "packageFolders": {
@@ -65,11 +66,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dl_jo\\source\\repos\\_DynamicsCRM-365\\PowerAppsComponents\\KitComponents\\KitControls\\src\\DS_SharePointDataCard\\DS_SharePointDataCard.pcfproj",
+      "projectUniqueName": "C:\\Users\\dl_jo\\repos\\D365\\PowerApps-KitControls\\src\\DS_SharePointDataCard\\DS_SharePointDataCard.pcfproj",
       "projectName": "DS_SharePointDataCard",
-      "projectPath": "C:\\Users\\dl_jo\\source\\repos\\_DynamicsCRM-365\\PowerAppsComponents\\KitComponents\\KitControls\\src\\DS_SharePointDataCard\\DS_SharePointDataCard.pcfproj",
+      "projectPath": "C:\\Users\\dl_jo\\repos\\D365\\PowerApps-KitControls\\src\\DS_SharePointDataCard\\DS_SharePointDataCard.pcfproj",
       "packagesPath": "C:\\Users\\dl_jo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dl_jo\\source\\repos\\_DynamicsCRM-365\\PowerAppsComponents\\KitComponents\\KitControls\\src\\DS_SharePointDataCard\\obj\\",
+      "outputPath": "C:\\Users\\dl_jo\\repos\\D365\\PowerApps-KitControls\\src\\DS_SharePointDataCard\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\dl_jo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -93,7 +94,7 @@
         "dependencies": {
           "Microsoft.PowerApps.MSBuild.Pcf": {
             "target": "Package",
-            "version": "[0.*, )"
+            "version": "[1.*, )"
           }
         }
       }
